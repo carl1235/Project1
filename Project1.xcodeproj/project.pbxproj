@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3CF114B27FA893F0045B009 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3CF114A27FA893F0045B009 /* main.cpp */; };
+		C3CF115C27FA89850045B009 /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3CF115627FA89840045B009 /* Vertex.cpp */; };
+		C3CF115D27FA89850045B009 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3CF115A27FA89850045B009 /* main.cpp */; };
+		C3CF115E27FA89850045B009 /* Edge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3CF115827FA89850045B009 /* Edge.cpp */; };
+		C3CF115F27FA89850045B009 /* DirectedGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3CF115527FA89840045B009 /* DirectedGraph.cpp */; };
+		C3CF116027FA89850045B009 /* UndirectedGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3CF115B27FA89850045B009 /* UndirectedGraph.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,16 @@
 
 /* Begin PBXFileReference section */
 		C3CF114727FA893F0045B009 /* Project1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Project1; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3CF114A27FA893F0045B009 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C3CF115227FA89840045B009 /* UndirectedGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UndirectedGraph.h; sourceTree = "<group>"; };
+		C3CF115327FA89840045B009 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		C3CF115427FA89840045B009 /* Edge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Edge.h; sourceTree = "<group>"; };
+		C3CF115527FA89840045B009 /* DirectedGraph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DirectedGraph.cpp; sourceTree = "<group>"; };
+		C3CF115627FA89840045B009 /* Vertex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
+		C3CF115727FA89840045B009 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		C3CF115827FA89850045B009 /* Edge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Edge.cpp; sourceTree = "<group>"; };
+		C3CF115927FA89850045B009 /* DirectedGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectedGraph.h; sourceTree = "<group>"; };
+		C3CF115A27FA89850045B009 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C3CF115B27FA89850045B009 /* UndirectedGraph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UndirectedGraph.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +70,16 @@
 		C3CF114927FA893F0045B009 /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
-				C3CF114A27FA893F0045B009 /* main.cpp */,
+				C3CF115527FA89840045B009 /* DirectedGraph.cpp */,
+				C3CF115927FA89850045B009 /* DirectedGraph.h */,
+				C3CF115827FA89850045B009 /* Edge.cpp */,
+				C3CF115427FA89840045B009 /* Edge.h */,
+				C3CF115727FA89840045B009 /* Graph.h */,
+				C3CF115A27FA89850045B009 /* main.cpp */,
+				C3CF115B27FA89850045B009 /* UndirectedGraph.cpp */,
+				C3CF115227FA89840045B009 /* UndirectedGraph.h */,
+				C3CF115627FA89840045B009 /* Vertex.cpp */,
+				C3CF115327FA89840045B009 /* Vertex.h */,
 			);
 			path = Project1;
 			sourceTree = "<group>";
@@ -119,7 +141,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3CF114B27FA893F0045B009 /* main.cpp in Sources */,
+				C3CF115F27FA89850045B009 /* DirectedGraph.cpp in Sources */,
+				C3CF115C27FA89850045B009 /* Vertex.cpp in Sources */,
+				C3CF115E27FA89850045B009 /* Edge.cpp in Sources */,
+				C3CF115D27FA89850045B009 /* main.cpp in Sources */,
+				C3CF116027FA89850045B009 /* UndirectedGraph.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
